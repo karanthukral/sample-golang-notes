@@ -48,11 +48,8 @@ func main() {
 	caCert := os.Getenv("CA_CERT")
 
 	db, err := storer.NewStorer(databaseURL, caCert)
-	// requireNoError(err, "connecting to database")
-	// defer db.Close()
-	if err != nil {
-		defer db.Close()
-	}
+	requireNoError(err, "connecting to database")
+	defer db.Close()
 
 	// Initialize the listening port.
 	port := os.Getenv("PORT")
