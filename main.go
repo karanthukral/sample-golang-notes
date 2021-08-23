@@ -116,7 +116,7 @@ func notesHandler(db storer.Storer) func(w http.ResponseWriter, r *http.Request)
 		}
 
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintf(w, "POST a note")
+		fmt.Fprintf(w, "POST a note, please")
 	}
 }
 
