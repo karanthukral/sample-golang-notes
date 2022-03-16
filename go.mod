@@ -1,6 +1,6 @@
 module github.com/digitalocean-apps/sample-with-database
 
-go 1.14
+go 1.18
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.4.1
